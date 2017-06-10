@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>SSI Demonstration</title>
+</head>
+<body>
+        <!--#include file="header.shtml" -->
+	<h1>Server-side Include Demonstration</h1>
+	<h2>The last time this file was updated was:</h2>
+	<p><!--#echo var="LAST_MODIFIED"--></p>
+	<hr />
+	<h2>The Current Environment Is:</h2>
+	<p><!--#echo var="PRINTENV"--></p>
+        <!--#include file="footer.shtml" -->
+</body>
+</html>

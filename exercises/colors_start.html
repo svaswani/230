@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset=utf-8" />
+	<title>JavaScript Fun</title>
+	<style type='text/css'>.palette{float:left;height:50px;width:100px}</style>
+	<script type='text/javascript'></script>
+</head>
+<body>
+	<div id='palette-div' style='border:2px solid white; float:left;'>&nbsp;</div>
+	<div id='color-div' style='clear:both; position:relative; left:0;'>&nbsp;</div>
+	
+	
+	<script type='text/javascript'>
+		var colors=new Array("#414D69","#7D4CC8","#83C0C8","#DE9D9C","#D98484","#D9DA84","#D6FF9A","#A2FF9A");
+		var palette="";
+		for(var i=0;i<colors.length;i++)
+		{
+			var s=colors[i];palette+=s;palette+=" ----- ";
+			var sdiv=document.createElement("div");
+			sdiv.className="palette";
+			sdiv.style.display="inline";
+			sdiv.style.backgroundColor=s;
+			sdiv.addEventListener("click",work);
+			function work()
+			{
+				setBgColor(this);
+			}
+			document.body.appendChild(sdiv);
+		}
+		document.getElementById("palette-div").innerHTML=palette;
+		function setBgColor(clickedDiv)
+		{
+			var color=clickedDiv.style.backgroundColor;
+			var cd=document.getElementById("color-div");
+			cd.innerHTML=color;
+			document.body.style.backgroundColor=color;
+		}
+		</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body{
+	/*has eye friendly bg color
+	sans serif text with good color contrast*/
+	background: #00ada7;
+	font-family: Dosis, sans-serif;
+}
+
+footer{
+	font-family: Verdana;
+	font-style: italic;
+	background-color: #00ada7;
+	color: #de3961;
+	text-align: center;
+	font-size: 80%;
+	padding-top:.05em;
+	padding-bottom:.05em;
+}
+
+.menu{
+	background-color: #00ada7;
+	height: 1em;
+	width:400px;
+	overflow: hidden;
+	
+	color: #de3961;
+	font-family: Verdana;
+	border-style: outset;
+	border-color: #a4e570;
+	border-width: 3px;
+	padding: .2em;
+
+	transition: height 1s;
+}
+
+.menu:hover{
+	height: 30em;
+	display:inline-block;
+	
+}
+
+.menu ul{
+	list-style:none;
+}
+
+
+
+h1{
+	/*big and bold, stands out but not ridiculously huge
+	contrasts with both background and body text colors
+	challenge: center horizontally*/
+	color: #a4e570;
+	font-family: Trebuchet MS;
+	font-size: 250%;
+	font-weight:bolder;
+	text-align: center;
+	
+}
+
+h2{
+	/*same as h1 but smaller*/
+	color: #a4e570;
+	font-family: Trebuchet MS;
+	font-size: 175%;
+	font-weight:bolder;
+}
+
+a:link{
+	/*links: choose unique colors for links when they are
+	unvisited, active, visited, and hovered overflow
+	remove the underline from all link states*/
+	color: #ed8e81;
+	
+}
+
+a:visited{
+	color: #de3961;
+}
+
+a:active{
+	color: #a4e570;
+}
+
+
+a:hover{
+	/*links: choose unique colors for links when they are
+	unvisited, active, visited, and hovered overflow
+	remove the underline from all link states*/
+	font-size: 110%;
+}
+
+
+
+

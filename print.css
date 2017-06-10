@@ -1,0 +1,19 @@
+h1 {
+	color: #000000;
+}
+
+body {
+	background: #ffffff;
+	font-size: 14pt;
+	margin: 0;
+	color: #000000;
+	font-family: "TimesNewRoman", serif;
+}
+
+div.image { 
+	display: none;
+}
+
+div.links {
+	display:none;
+}

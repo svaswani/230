@@ -1,0 +1,5 @@
+<footer>
+    Copyright 2016 Sneha Vaswani<br/>
+    All rights reserved<br/>
+    Page Count <!--#echo var="PAGE_COUNT"-->
+</footer>

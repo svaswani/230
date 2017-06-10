@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>DHTML FUN</title>
+    <script>
+    function yellowbox()
+    {
+    	var change=document.querySelector("#mousebox");
+    	change.style.backgroundColor="#FFFF00";
+    }
+	function whitebox()
+	{
+		var change2=document.querySelector("#mousebox");
+		change2.style.backgroundColor="#ffffff";
+	}
+	function changeAll(prop,val)
+	{
+		document.getElementById('coolBeans').style[prop]=val;
+	}
+	</script>
+</head>
+<body>
+  <div style="border:2px solid gray; width:10em; padding:5px; margin-bottom:30px;" id="mousebox" onmouseover=yellowbox(); onmouseout=whitebox();>
+    mouseover test
+  </div>
+  <form action="" method="">
+     Put in a color name (or hex):<input type="text" size="30" onchange='changeAll("color", value);'/><br/>
+     Put in a font size (like 12pt):<input type="text" size="30" onchange='changeAll("fontSize", value);'/><br/>
+     Put in a font family:<input type="text" size="30" onchange='changeAll("fontFamily", value);'/><br/>
+     Put in a new left (like 100px):<input type="text" size="30" onchange='changeAll("marginLeft", value);'/><br/>
+     Put in a new top (like 200px):<input type="text" size="30" onchange='changeAll("marginTop", value);'/><br/>
+     Put in a background color:<input type="text" size="30" onchange='changeAll("backgroundColor", value);'/>
+  </form> 
+  <div id="coolBeans" style="border:2px solid red; padding:3em; width:10em; position:relative;">
+    Some text to control
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

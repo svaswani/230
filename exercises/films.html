@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8" />
+	<title>Sneha Vaswani</title>
+
+	<style type="text/css">
+		h1,h2
+		{
+			font-family:verdana,tahoma,sans-serif;
+		}
+
+		body
+		{
+			margin-left: 10px;
+			margin-right: 10px;
+			background-color:#999;
+		}
+
+		#content
+		{
+			background-color:#ddd;
+			padding: 3px 10px 3px 10px;
+			width:225px;
+		}
+
+		footer
+		{
+			display:block;
+			color:gray;
+			text-align:center;
+		}
+	</style>
+
+	<script>
+
+		function makeGreen()
+		{
+			document.querySelector("body").style.backgroundColor = "green";
+		}
+
+		function makeRed()
+		{
+			document.querySelector("body").style.backgroundColor = "red";
+		}
+
+		function init()
+		{
+			var myH1 = document.querySelector("h1");
+			myH1.innerHTML = "Films!";
+
+			var myFooter = document.querySelector("footer");
+			myFooter.innerHTML = "Copyright 2016 Sneha Vaswani";
+
+			var myPage = document.getElementById("welcome");
+			myPage.innerHTML = "Welcome To Sneha's Page";
+
+			var myH1 = document.querySelector("h1");
+			myH1.style.color="red";
+			myH1.style.backgroundColor="yellow";
+
+			// when the #greenButton is clicked, call the makeGreen() function
+			var greenButton = document.querySelector("#green");
+			greenButton.onclick = makeGreen;
+
+			// when the #redButton is clicked, call the makeRed() function
+			var redButton = document.querySelector("#red");
+			redButton.onclick = makeRed;
+
+			document.querySelector("h1").setAttribute("title", "title creates tool tips");
+
+			// change link at bottom of page
+			var myLink = document.querySelector("a");
+			myLink.href = "http://www.bing.com";
+
+			
+		}
+
+		window.onload = init;
+	</script>
+
+</head>
+
+<body>
+	<button id="green">Make Green</button>
+	<button id="red">Make Red</button>
+
+	<div id="content">
+
+	<h1>Movies!</h1>
+
+	<p id="welcome">Welcome to my movie page!</p>
+
+	<h2>My favorite's!</h2>
+
+	<ul>
+		<li>The Dark Knight</li>
+		<li>3 Idiots</li>
+		<li>Inception</li>
+	</ul>
+
+<p><a id="bing" href="http://www.google.com">go to Google</a></p>
+
+<footer>Copyright 2013 svaswani</footer>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+body {
+	background: #00ada7;
+	font-size: 14pt;
+	margin: 0;
+	font-family: Dosis, sans-serif;
+}
+
+h1 {
+	color: #a4e570;
+	font-size: 18pt;
+	font-style: bold;
+	text-align: center;
+	padding-left: 25px;
+}
+
+h2 {
+	color: ##00ada7;
+	font-size: 16pt;
+	font-style: bold;
+	padding-left: 25px;
+}
+
+a {
+	color: #de3961;
+	text-decoration: none;
+	padding-left: 25px;
+}
+
+p {
+	padding-left: 25px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+div.image { 
+	float: right; 
+	clear: both;
+	font-style: italic;
+	padding-bottom: .5em;
+	padding-top: .5em;
+}

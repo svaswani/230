@@ -1,0 +1,6 @@
+<header>
+    <h1>SSI Page!</h1>
+    <!--#config timefmt="%B %d, %Y"--> Current Date: <!--#echo var="DATE_LOCAL" -->
+    Server IP: <!--#echo var="SERVER_ADDR"-->
+    Your IP: <!--#echo var="REMOTE_ADDR"-->
+</header>
